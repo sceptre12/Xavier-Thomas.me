@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Columbia;
+  font-weight: 400;
+  font-style: normal;
+  src: url("columbia.ttf");
+  font-display: block;
+}
+
+@font-face {
+  font-family: Test;
+  font-weight: 400;
+  font-style: normal;
+  src: url("ExpletusSans-Regular.ttf");
+  font-display: swap;
+}
