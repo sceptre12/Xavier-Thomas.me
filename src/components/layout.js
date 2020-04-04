@@ -16,7 +16,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      backgroundImage: file(relativePath: { eq: "forestD.png" }) {
+      backgroundImage: file(relativePath: { eq: "forestD.jpg" }) {
         childImageSharp {
           fluid(quality: 60, maxWidth: 2500) {
             ...GatsbyImageSharpFluid_withWebp
