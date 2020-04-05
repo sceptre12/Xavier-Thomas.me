@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
   `)
 
   const [hasImageLoaded, setImageLoaded] = useState(false)
-  console.log("render")
   return (
     <BackgroundImage
       Tag="section"
