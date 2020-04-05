@@ -36,10 +36,10 @@ const style = {
     alignItems: "center",
     flexDirection: "column",
     maxHeight: "80%",
-    padding: 20,
+    padding: 30,
     borderRadius: "87px 87px 87px 87px",
     backgroundColor: "rgba(0, 0, 0, 0.29)",
-    boxShadow: "0px 0px 300px 24px rgba(0,0,0,0.75)",
+    boxShadow: "0px 0px 300px -10px rgba(0,0,0,0.75)",
   },
   subTitle: {
     fontSize: "3vw",

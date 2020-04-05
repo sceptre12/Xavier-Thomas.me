@@ -23,10 +23,10 @@ const FogImg = ({ speed, data }) => (
 const Fog = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      backgroundImage: file(relativePath: { eq: "fog.webp" }) {
+      backgroundImage: file(relativePath: { eq: "fog.png" }) {
         childImageSharp {
           fluid(quality: 60) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }

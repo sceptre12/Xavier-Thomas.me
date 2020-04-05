@@ -16,10 +16,10 @@ import "./layout.css"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      backgroundImage: file(relativePath: { eq: "forestD.webp" }) {
+      backgroundImage: file(relativePath: { eq: "forestD.jpg" }) {
         childImageSharp {
           fluid(quality: 60, maxWidth: 2500) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -27,15 +27,15 @@ const Layout = ({ children }) => {
   `)
 
   const [hasImageLoaded, setImageLoaded] = useState(false)
-
+  console.log("render")
   return (
     <BackgroundImage
       Tag="section"
       id="layout"
-      onLoad={() => setImageLoaded(true)}
+      onLoad={() => setTimeout(() => setImageLoaded(true), 500)}
       fluid={data.backgroundImage.childImageSharp.fluid}
     >
-      {!!hasImageLoaded ? <Fog>{children}</Fog> : null}
+      <Fog>{!!hasImageLoaded ? children : null}</Fog>
     </BackgroundImage>
   )
 }
