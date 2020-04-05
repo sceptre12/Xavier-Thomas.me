@@ -16,10 +16,10 @@ import "./layout.css"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      backgroundImage: file(relativePath: { eq: "forestD.jpg" }) {
+      backgroundImage: file(relativePath: { eq: "forestD.webp" }) {
         childImageSharp {
           fluid(quality: 60, maxWidth: 2500) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
