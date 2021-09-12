@@ -103,7 +103,7 @@ const IndexPage = () => (
             />
           </a>
           <div style={style.divide} />
-          <a href="www.linkedin.com/in/xavier-thomas-me">
+          <a href="https://www.linkedin.com/in/xavier-thomas-me">
             <FontAwesomeIcon
               icon={faLinkedin}
               size="2x"
