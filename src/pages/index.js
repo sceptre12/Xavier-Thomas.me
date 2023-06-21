@@ -91,7 +91,7 @@ const IndexPage = () => (
           satellites. I missed the spaceship part.. but we'll get there soon.
         </p>
         <p style={style.textColor}>
-          These days, I'm a Tech Lead / Product Owner at LM
+          These days, I'm a Senior Engineer at Mailchimp (Intuit)
         </p>
         <p style={style.textColor}>If you want to chat, you can find me at: </p>
         <div style={style.iconList}>
